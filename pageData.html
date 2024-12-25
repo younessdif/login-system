@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cruds</title>
+    <link rel="stylesheet" href="css/pageData.css">
+
+
+</head>
+
+<body>
+    <div id="parant">
+        <div id="header">
+            <h2>cruds</h2>
+            <p>system management product</p>
+        </div>
+        <div id="inpt">
+            <input id="title" type="text" placeholder="title">
+            <div id="don">
+                <input onkeyup="getTotal()" id="price" type="number" placeholder="price">
+                <input onkeyup="getTotal()" id="taxes" type="number" placeholder="taxes">
+                <input onkeyup="getTotal()" id="ads" type="number" placeholder="ads">
+                <input onkeyup="getTotal()" id="discount" type="number" placeholder="discount">
+                <span id="total"></span>
+            </div>
+            <input id="count" type="number" placeholder="count">
+            <input id="category" type="text" placeholder="category">
+            <button onclick="creatData()" id="create">create</button>
+        </div>
+        <div id="outpot">
+            <input onkeyup="searchData(this.value)" id="search" type="text" placeholder="search">
+            <div id="btnsearch">
+                <button onclick="btnSearch(this.id)" id="searchTitle">search title</button>
+                <button onclick="btnSearch(this.id)" id="searchCategory">search category</button>
+            </div>
+
+        </div>
+        <div>
+            <div id="spr"></div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>count</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+
+        </div>
+
+
+    </div>
+
+    <script src="javascript/pageData.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    background: #222;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+input , button {
+    width: 100%;
+    margin: 4px;
+    padding: 4px;
+    background: #000;
+    height: 25px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+}
+
+#create {
+    background-color: rgb(8, 27, 8);
+    color: #fff;
+    letter-spacing: 1px;
+
+    height: 30px;
+}
+
+#create:hover {
+    background-color: rgb(23, 56, 23);
+}
+
+#parant {
+    width: 80%;
+    display: block;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#header {
+    text-align: center;
+
+}
+
+#don {
+    display: flex;
+
+}
+
+#total {
+    width: 20%;
+    background: red;
+    margin: 4px;
+    padding: 4px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+#total::before {
+    content: 'total:';
+}
+
+
+#btnsearch {
+    display: flex;
+}
+
+button {
+
+    background: rgb(10, 10, 22);
+}
+
+button:hover {
+    background: rgb(23, 23, 53);
+}
+
+table {
+    width: 100%;
+}
+
+th ,td{
+    font-family: monospace;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+#update{
+    color: #fff;
+    background: rgb(12, 12, 182);
+}
+#delete {
+background: rgb(107, 18, 18);
+    color: #fff;
+}
+
+#tbody {
+    width: 100%;
+ 
+}
+#da{
+    background: rgb(175, 4, 4);
+}
