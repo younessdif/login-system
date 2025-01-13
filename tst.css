@@ -1,0 +1,55 @@
+body {
+    background: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.div {
+    background: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+
+}
+.div::after,
+.div::before {
+    content: ' ';
+    border-radius: 50%;
+    padding: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-image: conic-gradient(from var(--angle), transparent 70%, rgba(0, 0, 255, 0.473));
+    width: 200px;
+    height: 200px;
+    translate: -50% -50%;
+    z-index:-1;
+    animation: 3s splin linear infinite;
+}
+
+.div::before {
+    filter: blur(1.5rem);
+    opacity: 0.7;
+}
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes splin {
+    from {
+        --angle: 0deg
+    }
+
+    to {
+        --angle: 360deg;
+    }
+
+
+}
