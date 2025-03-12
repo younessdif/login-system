@@ -7,29 +7,30 @@
 
     <title>learnjs</title>
     <link rel="stylesheet" href="css/learnjs.css">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="container">
-        <form class="box" action="">
-            <input type="text" id="searchBox" placeholder="name">
-            <button type="search"><i class="fa-solid fa-magnifying-glass"></i></button>
-
-            <ul id="list">
-                <li>html</li>
-                <li>css</li>
-                <li>javaScript</li>
-                <li>jgeury</li>
-                <li>mySqul</li>
-                <li>pyton</li>
-            </ul>
-        </form>
+    <div class="box" data-box>
+        <div class="head-box p1">
+            <h2>Header Box</h2>
+        </div>
+        <div class="body-box p1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error autem dolor sequi voluptatibus animi
+                possimus corporis ratione eos iure. Eligendi fuga, ea eum nostrum voluptatibus dolorum pariatur rem
+                voluptas sed.</p>
+        </div>
+        <div class="foot-box p1">
+            <button class="close" data-pup>close</button>
+        </div>
     </div>
-
+    
+    <button id="show" data-pup>show</button>
+    <div class="over-ley" data-overley data-pup></div>
+    
     <script src="learn.js"></script>
 </body>
 

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Cairo+Play:wght@200..1000&family=Mada:wght@200..900&family=Noto+Kufi+Arabic:wght@100..900&family=Vibes&display=swap');
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -12,73 +13,85 @@ body {
   );
   height: 100vh;
   font-family: "Noto Kufi Arabic", sans-serif;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: rgba(255, 255, 255, 0.712);
   font-size: 1rem;
+  display: grid;
+  place-content: center;
 }
-
-ul {
-  padding: 0;
-}
-li {
-  list-style: none;
-}
-input,
 button {
   font: inherit;
-
+  background-color: rgba(165, 42, 42, 0.555);
+  color: #ffffffbe;
+  padding: .1rem 1rem;
+  border-radius: 5px;
+  color: #ffffffb4;
   border: 0;
-  outline: none;
-  background: rgba(171, 171, 235, 0.11);
+  letter-spacing: 2px;
+  font-weight: bold;
+  transition: 300ms;
+  cursor: pointer;
 }
-.container {
-  margin: 0 1rem;
-  width: min(50rem, 100%);
+button:hover {
+  background-color: rgb(165, 42, 42);
+  color: #fffffffd;
 }
 
 .box {
-  position: relative;
-  width: 80%;
-}
-.box input {
-  width: 100%;
-  padding: .65rem 1rem;
-  border-radius: 2rem;
-  color: #aab9eb9a;
-}
-.box button {
-  all: unset;
-  position: absolute;
-  right: 1rem;
-  top: .6rem;
-}
-.box button i {
-  color: rgba(245, 245, 220, 0.438);
-  cursor: pointer;
-}
-
-.box button i:hover {
-  color: #fff;
-}
-#list{
-  padding: 1rem;
-  margin-block-start: 1rem;
-
-  background-color:rgba(30, 30, 73, 0.140) ;
+  position: fixed;
+  top: -50%;
+  left: 50%;
+  width: min(500px, 100%);
+  translate: -50% -50%;
+  background-image: linear-gradient(
+    90deg,
+    rgb(20, 19, 19) -1.19%,
+    rgb(13, 13, 43) 100%
+  );
+  border: 1px solid #cccccc21;
   border-radius: 10px;
+  margin: auto;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2;
+  transition: 700ms;
 }
-#list li{
-padding: .4rem  1rem;
-color: #aab9eb9a;
+.box:is(.active) {
+  opacity: 1;
+  visibility: visible;
+  top: 50%;
+}
+.head-box { 
+  border-bottom: 1px solid #cccccc21;
+}
+.p1 {
+  padding: 16px;
+}
+.head-box h2 {
+  font-size: 22px;
+}
+
+.foot-box {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #cccccc21;
+}
+#show {
+  padding: .5rem 5rem;
+  color: #fff;
 
 }
-#list li:hover{
-  background-color:rgba(30, 30, 73, 0.140) ;
-  border-radius: 5px; 
-  color: #aab9ebf3;
+.over-ley {
+  position: fixed;
+  inset: 0;
+  background: rgb(211, 207, 207);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  transition: 700ms;
 }
-.hide{
-  display: none;
+
+.over-ley:is(.active) {
+  opacity: 20%;
+  visibility: visible;
+ 
 }

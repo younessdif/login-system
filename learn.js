@@ -1,16 +1,11 @@
 "use scrict";
+let Box = document.querySelector("[data-box]"),
+  pup = document.querySelectorAll("[data-pup]"),
+  overley = document.querySelector("[data-overley]");
 
-let filter = document.getElementById("searchBox");
-
-filter.addEventListener("keyup", function() {
-  let search = this.value.toLowerCase();
-  let list = document.querySelectorAll("#list li");
-
-  for (let i of list) {
-    let item = i.innerHTML.toLowerCase();
-    if (item.indexOf(search) == -1) 
-        i.classList.add("hide");
-    else
-        i.classList.remove("hide");
-  }
-});
+for (let i of pup) {
+  i.addEventListener("click", function() {
+    Box.classList.toggle("active");
+    overley.classList.toggle("active");
+  });
+}
