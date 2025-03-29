@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Cairo+Play:wght@200..1000&family=Mada:wght@200..900&family=Noto+Kufi+Arabic:wght@100..900&family=Rock+Salt&family=Vibes&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: #ddddddb9;
+  width: 100%;
+  height: 100vh;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box{
+  width: 70%;
+}
+.container {
+width: 100%;
+height:100vh ;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgba(0, 0, 255, 0.11);
+}
+
+.btn-send{
+padding: 10px 60px;
+border-radius: 50px;
+border: 0;
+background-color: rgba(240, 248, 255, 0.205);
+color: beige;
+letter-spacing: 2px;
+cursor: pointer;
+}
+
+.card{
+background-color: aliceblue;
+color: #111;
+padding: 1rem;
+border-radius: 10px;
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
